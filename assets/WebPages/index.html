@@ -1,0 +1,71 @@
+{{define "index"}}
+<!DOCTYPE html>
+    <html lang="fr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Styles/styles.css">
+        <title>YMMERSION S2 - PROJ.PORTFOLIO</title>
+    </head>
+    
+    <body>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Epreuves</a></li>
+                <ul>
+        </nav>
+        <section>
+        <!--Les modifs commencent ici Johan-->
+			<div class="container">
+                <audio id="son" src="/Sounds/CardFlip.mp3" autoplay></audio>
+                <div class="column">
+                    <div class="card" id="1">
+                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div> <!--Faut penser a remettre le numero de la carte-->
+                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                    </div>
+                    <div class="card" id="4">
+                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                    </div>
+                </div>
+                <div class="column middle">
+                    <div class="card" id="2">
+                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                    </div>
+                    <div class="card" id="5">
+                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card" id="3">
+                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                    </div>
+                    <div class="card" id="6">
+                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Et ca fini ici-->
+        </section>
+    
+        <div class="line"></div>
+        <section>
+            <div class="bottom-container">
+        </section>
+    
+        </div>
+        <script src="/Scripts/script.js"></script>
+    </body>
+    
+    </html>
+    <!--
+    {{.CartesDos}}
+    -->
+{{end}}

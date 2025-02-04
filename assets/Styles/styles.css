@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Popins;
+    src: url(../font/Poppins-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Popins, sans-serif;
+    background: radial-gradient(circle at center, #0d0d0d 25%, rgb(48, 08, 50) 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+    padding: 1rem;
+    z-index: 99;
+    position: sticky;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    position: sticky;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+    color: rgb(126, 13, 132);
+}
+
+.line {
+    height: 50px;
+    background-color: #7B5ED4;
+    opacity: 30%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 100vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.middle {
+    transform: translateY(30px);
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Les modifs sont a partir d'ici johan */
+
+.card {
+    width: 160px;
+    height: 220px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card.clicked {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
