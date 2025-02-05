@@ -160,8 +160,10 @@ section {
 
 /* Cible les épreuves-card dans les éléments pairs (gauche) */
 .epreuve-item:nth-child(1) .epreuve-card {
+    background-color: #CCC;
+    /*
     background : url(/Pictures/Epreuve_IMG/creeper.png) no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .epreuve-item:nth-child(2) .epreuve-card {

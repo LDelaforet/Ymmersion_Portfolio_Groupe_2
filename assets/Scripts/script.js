@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Gestion du zoom des épreuves
+
+//=================================================================== Gestion du zoom des épreuves===================================================================
     const epreuveCards = document.querySelectorAll('.epreuve-card');
     epreuveCards.forEach(card => {
         card.addEventListener('click', function() {
@@ -104,6 +105,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+//===================================================================================================================================================================
+
+
 
 let header = document.querySelector("nav");
 let menu = document.querySelectorAll("a");
