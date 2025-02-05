@@ -167,27 +167,32 @@ section {
 }
 
 .epreuve-item:nth-child(2) .epreuve-card {
-    background-color: #CCC;
+    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background-size: cover;
 }
 
 /* Cible la troisième épreuve-card */
 .epreuve-item:nth-child(3) .epreuve-card {
-    background-color: #CCC;
+    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background-size: cover;
 }
 
 /* Cible la quatrième épreuve-card */
 .epreuve-item:nth-child(4) .epreuve-card {
-    background-color: #CCC;
+    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background-size: cover;
 }
 
 /* Cible la cinquième épreuve-card */
 .epreuve-item:nth-child(5) .epreuve-card {
-    background-color: #CCC;
+    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background-size: cover;
 }
 
 /* Cible la sixième épreuve-card */
 .epreuve-item:nth-child(6) .epreuve-card {
-    background-color: #CCC;
+    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background-size: cover;
 }
 
 .epreuve-item.right {
