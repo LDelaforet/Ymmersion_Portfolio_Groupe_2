@@ -195,6 +195,39 @@ section {
     background-size: cover;
 }
 
+
+.epreuve-item:nth-child(1) .epreuve-card.zoomed {
+    background: none;
+    background-size: cover;
+}
+
+.epreuve-item:nth-child(2) .epreuve-card.zoomed {
+    background : none;
+    background-size: cover;
+}
+
+.epreuve-item:nth-child(3) .epreuve-card.zoomed {
+    background : none;
+    background-size: cover;
+}
+
+.epreuve-item:nth-child(4) .epreuve-card.zoomed {
+    background : none;
+    background-size: cover;
+}
+
+.epreuve-item:nth-child(5) .epreuve-card.zoomed {
+    background : none;
+    background-size: cover;
+}
+
+.epreuve-item:nth-child(6) .epreuve-card.zoomed {
+    background : none;
+    background-size: cover;
+}
+
+
+
 .epreuve-item.right {
     justify-content: flex-end;
 }
