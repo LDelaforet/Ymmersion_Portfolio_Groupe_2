@@ -154,16 +154,16 @@ section {
     width: 30px;
     height: 30px;
     border-radius: 8px;
-    background: url(/Pictures/Epreuve_IMG/plein-ecran.png) no-repeat;
+    background: url(/Pictures/Epreuve_IMG/plein-ecran2.png) no-repeat;
     background-size: cover;
 }
 
 /* Cible les épreuves-card dans les éléments pairs (gauche) */
 .epreuve-item:nth-child(1) .epreuve-card {
-    background-color: #CCC;
-    /*
-    background : url(/Pictures/Epreuve_IMG/creeper.png) no-repeat;
-    background-size: cover;*/
+    /*background-color: #CCC;*/
+    
+    background : url(/Pictures/Epreuve_IMG/css.png) no-repeat;
+    background-size: cover;
 }
 
 .epreuve-item:nth-child(2) .epreuve-card {
