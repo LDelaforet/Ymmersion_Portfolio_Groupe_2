@@ -16,6 +16,7 @@ body {
     font-family: Popins, sans-serif;
     background: radial-gradient(circle at center, #0d0d0d 25%, rgb(48, 08, 50) 100%);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -132,14 +133,9 @@ section {
     width: 100%;
 }
 
-.epreuve-item.right {
-    justify-content: flex-end;
-}
-
 .epreuve-card {
     width: 508px;
     height: 260px;
-    background: red;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -149,6 +145,7 @@ section {
     cursor: pointer;
 }
 
+
 .epreuve-card::after {
     content: '';
     position: absolute;
@@ -157,8 +154,45 @@ section {
     width: 30px;
     height: 30px;
     border-radius: 8px;
-    background: #000;
+    background: url(/Pictures/Epreuve_IMG/plein-ecran.png) no-repeat;
+    background-size: cover;
 }
+
+/* Cible les épreuves-card dans les éléments pairs (gauche) */
+.epreuve-item:nth-child(1) .epreuve-card {
+    background : url(/Pictures/Epreuve_IMG/creeper.png) no-repeat;
+    background-size: cover;
+}
+
+.epreuve-item:nth-child(2) .epreuve-card {
+    background-color: #CCC;
+}
+
+/* Cible la troisième épreuve-card */
+.epreuve-item:nth-child(3) .epreuve-card {
+    background-color: #CCC;
+}
+
+/* Cible la quatrième épreuve-card */
+.epreuve-item:nth-child(4) .epreuve-card {
+    background-color: #CCC;
+}
+
+/* Cible la cinquième épreuve-card */
+.epreuve-item:nth-child(5) .epreuve-card {
+    background-color: #CCC;
+}
+
+/* Cible la sixième épreuve-card */
+.epreuve-item:nth-child(6) .epreuve-card {
+    background-color: #CCC;
+}
+
+.epreuve-item.right {
+    justify-content: flex-end;
+}
+
+
 
 .epreuve-text {
     color: #FFFFFF;
@@ -197,8 +231,8 @@ section {
 
 .zoom-content {
     display: flex;
-    height: 99vh;
-    width: 99vw;
+    height: 100vh;
+    width: 100%;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -209,6 +243,8 @@ section {
     transition: opacity 0.5s ease;
     padding: 20px;
     overflow-y: auto;
+    top: 85px;
+    position: absolute;
 }
 
 .zoom-content.visible {

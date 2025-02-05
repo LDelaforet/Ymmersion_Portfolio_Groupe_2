@@ -111,7 +111,7 @@ let menu = document.querySelectorAll("a");
 document.addEventListener("scroll", () => {
     let scrollPosition = window.scrollY;
     if (scrollPosition > 0) {
-        header.style.backgroundColor = "#F2F2F4";
+        header.style.backgroundColor = "#CCC";
         header.style.color = "#000000";
         menu.forEach((item) => {
             item.style.color = "#000000";
@@ -127,3 +127,19 @@ document.addEventListener("scroll", () => {
         header.style.transition = "background-color 1s ease-in-out, color 1s ease-in-out";
     }
 });
+
+/* NAVBAR DYNAMIQUE */
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Récupère l'id de la section à atteindre
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        // Défilement fluide vers la section cible
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+
