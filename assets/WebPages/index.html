@@ -1,71 +1,168 @@
 {{define "index"}}
 <!DOCTYPE html>
-    <html lang="fr">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/Styles/styles.css">
-        <title>YMMERSION S2 - PROJ.PORTFOLIO</title>
-    </head>
-    
-    <body>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Equipe</a></li>
-                <li><a href="#">Epreuves</a></li>
-                <ul>
-        </nav>
-        <section>
-        <!--Les modifs commencent ici Johan-->
-			<div class="container">
-                <audio id="son" src="/Sounds/CardFlip.mp3" autoplay></audio>
-                <div class="column">
-                    <div class="card" id="1">
-                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div> <!--Faut penser a remettre le numero de la carte-->
-                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
-                    </div>
-                    <div class="card" id="4">
-                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
-                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
-                    </div>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <title>YMMERSION S2 - PROJ.PORTFOLIO</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="close-button">✕</div>
+
+    <nav class="header">
+        <ul class="nav-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Epreuves</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="container">
+            <audio id="son" src="/Sounds/CardFlip.mp3" autoplay></audio>
+            <div class="column">
+                <div class="card" id="1">
+                    <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                    <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
                 </div>
-                <div class="column middle">
-                    <div class="card" id="2">
-                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
-                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
-                    </div>
-                    <div class="card" id="5">
-                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
-                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
-                    </div>
+                <div class="card" id="4">
+                    <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                    <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
                 </div>
-                <div class="column">
-                    <div class="card" id="3">
-                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
-                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+            </div>
+            <div class="column middle">
+                <div class="card" id="2">
+                    <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                    <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                </div>
+                <div class="card" id="5">
+                    <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                    <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" id="3">
+                    <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                    <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                </div>
+                <div class="card" id="6">
+                    <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
+                    <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="bottom-container">
+            <div class="epreuves-section">
+                <div class="epreuves-group">
+                    <!-- Première carte - gauche -->
+                    <div class="epreuve-item">
+                        <div class="epreuve-card">
+                            <div class="zoom-content">
+                                <h2>Épreuve 1</h2>
+                                <p>Contenu détaillé de l'épreuve 1...</p>
+                            </div>
+                        </div>
+                        <div class="epreuve-text">
+                            <h1>Epreuves 1 : Logo Minecraft</h1>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, corrupti?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit
+                                cumque rerum ipsa deserunt? Quia?</p>
+                        </div>
                     </div>
-                    <div class="card" id="6">
-                        <div class="card__face front"><img src="Pictures/Cartes_Front/PlaceHolder.png"></div>
-                        <div class="card__face back"><img src="Pictures/Cartes_Back/PlaceHolder.png"></div>
+                    <!-- Deuxième carte - droite -->
+                    <div class="epreuve-item right">
+                        <div class="epreuve-text">
+                            <h1>Epreuves 2 : Logo Minecraft</h1>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, corrupti?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit
+                                cumque rerum ipsa deserunt? Quia?</p>
+                        </div>
+                        <div class="epreuve-card">
+                            <div class="zoom-content">
+                                <h2>Épreuve 2</h2>
+                                <p>Contenu détaillé de l'épreuve 2...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Troisième carte - gauche -->
+                    <div class="epreuve-item">
+                        <div class="epreuve-card">
+                            <div class="zoom-content">
+                                <h2>Épreuve 3</h2>
+                                <p>Contenu détaillé de l'épreuve 3...</p>
+                            </div>
+                        </div>
+                        <div class="epreuve-text">
+                            <h1>Epreuves 3 : Logo Minecraft</h1>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, corrupti?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit
+                                cumque rerum ipsa deserunt? Quia?</p>
+                        </div>
+                    </div>
+                    <div class="epreuve-item right">
+                        <div class="epreuve-text">
+                            <h1>Epreuves 4 : Logo Minecraft</h1>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, corrupti?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit
+                                cumque rerum ipsa deserunt? Quia?</p>
+                        </div>
+                        <div class="epreuve-card">
+                            <div class="zoom-content">
+                                <h2>Épreuve 4</h2>
+                                <p>Contenu détaillé de l'épreuve 4...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="epreuve-item">
+                        <div class="epreuve-card">
+                            <div class="zoom-content">
+                                <h2>Épreuve 5</h2>
+                                <p>Contenu détaillé de l'épreuve 5...</p>
+                            </div>
+                        </div>
+                        <div class="epreuve-text">
+                            <h1>Epreuves 5 : Logo Minecraft</h1>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, corrupti?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit
+                                cumque rerum ipsa deserunt? Quia?</p>
+                        </div>
+                    </div>
+                    <div class="epreuve-item right">
+                        <div class="epreuve-text">
+                            <h1>Epreuves 6 : Logo Minecraft</h1>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, corrupti?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit
+                                cumque rerum ipsa deserunt? Quia?</p>
+                        </div>
+                        <div class="epreuve-card">
+                            <div class="zoom-content">
+                                <h2>Épreuve 6</h2>
+                                <p>Contenu détaillé de l'épreuve 6...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!--Et ca fini ici-->
-        </section>
-    
-        <div class="line"></div>
-        <section>
-            <div class="bottom-container">
-        </section>
-    
         </div>
-        <script src="/Scripts/script.js"></script>
-    </body>
-    
-    </html>
-    <!--
-    {{.CartesDos}}
-    -->
+    </section>
+
+    <script defer src="/Scripts/script.js"></script>
+</body>
+
+</html>
 {{end}}
