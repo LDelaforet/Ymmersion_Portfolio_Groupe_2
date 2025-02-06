@@ -20,7 +20,23 @@ type FlipRequest struct {
 	CardID string `json:"cardId"`
 }
 
+func ReadEpreuve(epreuve string) string {
+	fileContent, err := ioutil.ReadFile("../assets/Epreuves/" + epreuve)
+	if err != nil {
+		return "Impossible de lire le fichier"
+	} else {
+		return string(fileContent)
+	}
+}
+
 func main() {
+	CodeEp1 := ""
+	CodeEp2 := ""
+	CodeEp3 := ""
+	CodeEp4 := ""
+	CodeEp5 := ""
+	CodeEp6 := ""
+
 	// Charger les templates HTML
 	temp, errTemp := template.ParseGlob("../assets/WebPages/*.html")
 	if errTemp != nil {
@@ -28,15 +44,20 @@ func main() {
 		return
 	}
 
-	fileContent, err := ioutil.ReadFile("main.go")
-	if err != nil {
-		fmt.Printf("Error reading file: %v\n", err)
-		return
-	}
-	Code := string(fileContent)
+	CodeEp1 = ReadEpreuve("Epreuve1.css")
+	CodeEp2 = ReadEpreuve("Epreuve2.go")
+	CodeEp3 = ReadEpreuve("Epreuve3.go")
+	CodeEp4 = ReadEpreuve("Epreuve4.py")
+	CodeEp5 = ReadEpreuve("Epreuve5.go")
+	CodeEp6 = ReadEpreuve("Epreuve6.go")
 
 	PassedVars := PassedStruct{
-		Code1: Code,
+		Code1: CodeEp1,
+		Code2: CodeEp2,
+		Code3: CodeEp3,
+		Code4: CodeEp4,
+		Code5: CodeEp5,
+		Code6: CodeEp6,
 	}
 
 	// Bouton pour aller a /promo

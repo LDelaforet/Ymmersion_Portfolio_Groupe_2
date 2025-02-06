@@ -334,12 +334,28 @@ section {
     position: absolute;
     right: 200px;
     border-radius: 20px;
-    height: 56vh;
+    height: 59vh;
 }
 
-.language-go code {
+.language-css {
+    width: 30vw;
     position: absolute;
-    right: -10px;
+    right: 200px;
+    border-radius: 20px;
+    height: 59vh;
+}
+
+.language-python {
+    width: 30vw;
+    position: absolute;
+    right: 200px;
+    border-radius: 20px;
+    height: 59vh;
+}
+
+.code {
+    position: absolute;
+    right: -20px;
 }
 
 .text-content {

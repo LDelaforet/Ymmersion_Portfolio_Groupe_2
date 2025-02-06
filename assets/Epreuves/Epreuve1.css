@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+      overflow: hidden;
+      height: 100vh;
+      background-color: green;
+  }
+  
+  .tout {
+      position: relative;
+      left: 30%;
+      bottom: 50px;
+  }
+  
+  .yeux {
+      display: flex;
+      margin-top: 100px;
+      gap: 13%;
+  
+  }
+  
+  .gauche {
+      width: 200px;
+      height: 200px;
+      background-color: black;
+  }
+  
+  .droit {
+      width: 200px;
+      height: 200px;
+      background-color: black;
+  }
+  
+  .nez {
+      width: 200px;
+      height: 320px;
+      background-color: black;
+      position: absolute;
+      left: 200px;
+  }
+  
+  .left {
+      width: 143px;
+    height: 320px;
+    background-color: black;
+    position: absolute;
+    left: 60px;
+    top: 295px;
+  }
+  
+  .right {
+      width: 143px;
+      height: 320px;
+      background-color: black;
+      position: absolute;
+      left: 397px;
+      top: 296px;
+  }
