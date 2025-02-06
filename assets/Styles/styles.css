@@ -161,37 +161,37 @@ section {
 /* Cible les épreuves-card dans les éléments pairs (gauche) */
 .epreuve-item:nth-child(1) .epreuve-card {
     /*background-color: #CCC;*/
-    
-    background : url(/Pictures/Epreuve_IMG/css.png) no-repeat;
+
+    background: url(/Pictures/Epreuve_IMG/css.png) no-repeat;
     background-size: cover;
 }
 
 .epreuve-item:nth-child(2) .epreuve-card {
-    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background: url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
     background-size: cover;
 }
 
 /* Cible la troisième épreuve-card */
 .epreuve-item:nth-child(3) .epreuve-card {
-    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background: url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
     background-size: cover;
 }
 
 /* Cible la quatrième épreuve-card */
 .epreuve-item:nth-child(4) .epreuve-card {
-    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background: url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
     background-size: cover;
 }
 
 /* Cible la cinquième épreuve-card */
 .epreuve-item:nth-child(5) .epreuve-card {
-    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background: url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
     background-size: cover;
 }
 
 /* Cible la sixième épreuve-card */
 .epreuve-item:nth-child(6) .epreuve-card {
-    background : url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background: url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
     background-size: cover;
 }
 
@@ -202,27 +202,27 @@ section {
 }
 
 .epreuve-item:nth-child(2) .epreuve-card.zoomed {
-    background : none;
+    background: none;
     background-size: cover;
 }
 
 .epreuve-item:nth-child(3) .epreuve-card.zoomed {
-    background : none;
+    background: none;
     background-size: cover;
 }
 
 .epreuve-item:nth-child(4) .epreuve-card.zoomed {
-    background : none;
+    background: none;
     background-size: cover;
 }
 
 .epreuve-item:nth-child(5) .epreuve-card.zoomed {
-    background : none;
+    background: none;
     background-size: cover;
 }
 
 .epreuve-item:nth-child(6) .epreuve-card.zoomed {
-    background : none;
+    background: none;
     background-size: cover;
 }
 
@@ -323,5 +323,36 @@ section {
 .zoom-content h2 {
     font-size: 2em;
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.language-go {
+    width: 30vw;
+    position: absolute;
+    right: 200px;
+    border-radius: 20px;
+    height: 59vh;
+}
+
+.language-go code {
+    position: absolute;
+    right: -10px;
+}
+
+.text-content {
+    width: 34vw;
+    text-align: left;
+    margin-top: 10px;
+    position: absolute;
+    left: 190px;
+}
+
+.text-content p {
+    margin: 20px;
+}
+
+.text-content img {
+    width: 150px;
+    margin: 20px;
 }
