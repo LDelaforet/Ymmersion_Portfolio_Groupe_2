@@ -334,7 +334,7 @@ section {
     position: absolute;
     right: 200px;
     border-radius: 20px;
-    height: 59vh;
+    height: 56vh;
 }
 
 .language-go code {
@@ -344,7 +344,7 @@ section {
 
 .text-content {
     width: 34vw;
-    text-align: left;
+    text-align: center;
     margin-top: 10px;
     position: absolute;
     left: 190px;
