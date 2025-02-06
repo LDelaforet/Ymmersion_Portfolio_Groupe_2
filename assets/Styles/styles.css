@@ -276,9 +276,11 @@ section {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: #CCC;
+    background: radial-gradient(circle at center, #0d0d0d 25%, rgb(48, 08, 50) 100%);
     border-radius: 15px;
     opacity: 0;
+    font-family: Popins, sans-serif;
+    color: #FFFFFF;
     visibility: hidden;
     transition: opacity 0.5s ease;
     padding: 20px;
@@ -322,7 +324,7 @@ section {
 
 .zoom-content h2 {
     font-size: 2em;
-    color: #000;
+    color: #FFFFFF;
     margin-bottom: 6px;
     text-align: center;
 }
