@@ -374,3 +374,27 @@ section {
     width: 150px;
     margin: 20px;
 }
+
+.header-container {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 100px;
+    text-align: left;
+}
+
+.header-container p {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 80px;
+    text-align: left;
+    text-shadow: 0 0 10px rgba(179, 0, 255, 0.8), 
+                         0 0 20px rgba(179, 0, 255, 0.6), 
+                         0 0 30px rgba(179, 0, 255, 0.4);
+}
+
+.header-container h1 {
+    color: #FFFFFF;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+    0 0 20px rgba(255, 255, 255, 0.6), 
+    0 0 30px rgba(255, 255, 255, 0.4);
+}
