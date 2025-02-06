@@ -179,7 +179,7 @@ section {
 
 /* Cible la quatrième épreuve-card */
 .epreuve-item:nth-child(4) .epreuve-card {
-    background: url(/Pictures/Epreuve_IMG/csscode.png) no-repeat;
+    background: url(/Pictures/Epreuve_IMG/pythoncode.png) no-repeat;
     background-size: cover;
 }
 
