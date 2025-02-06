@@ -2,17 +2,18 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"net/http"
 	"text/template"
 )
 
 type PassedStruct struct {
-	State1 string
-	State2 string
-	State3 string
-	State4 string
-	State5 string
-	State6 string
+	Code1 string
+	Code2 string
+	Code3 string
+	Code4 string
+	Code5 string
+	Code6 string
 }
 
 type FlipRequest struct {
@@ -20,13 +21,22 @@ type FlipRequest struct {
 }
 
 func main() {
-	PassedVars := PassedStruct{}
-
 	// Charger les templates HTML
 	temp, errTemp := template.ParseGlob("../assets/WebPages/*.html")
 	if errTemp != nil {
 		fmt.Printf("Error: %v\n", errTemp)
 		return
+	}
+
+	fileContent, err := ioutil.ReadFile("main.go")
+	if err != nil {
+		fmt.Printf("Error reading file: %v\n", err)
+		return
+	}
+	Code := string(fileContent)
+
+	PassedVars := PassedStruct{
+		Code1: Code,
 	}
 
 	// Bouton pour aller a /promo

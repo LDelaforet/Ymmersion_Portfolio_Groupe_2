@@ -55,8 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
-//=================================================================== Gestion du zoom des épreuves===================================================================
+    // Gestion du zoom des épreuves
     const epreuveCards = document.querySelectorAll('.epreuve-card');
     epreuveCards.forEach(card => {
         card.addEventListener('click', function() {
@@ -65,26 +64,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function zoomCard(card) {
-    console.log("Zoom sur la carte", card);
-    activeCard = card;
-    const zoomContent = card.querySelector('.zoom-content');
-    
-    if (!zoomContent) {
-        console.error("Élément .zoom-content non trouvé dans", card);
-        return;
+        console.log("Zoom sur la carte", card);
+        activeCard = card;
+        const zoomContent = card.querySelector('.zoom-content');
+        if (!zoomContent) {
+            console.error("Élément .zoom-content non trouvé dans", card);
+            return;
+        }
+        card.classList.add('zoomed');
+        overlay.classList.add('active');
+        closeButton.classList.add('visible');
+        setTimeout(() => {
+            zoomContent.classList.add('visible');
+        }, 500);
+        document.body.style.overflow = 'hidden';
     }
-    
-    card.classList.add('zoomed');
-    overlay.classList.add('active');
-    closeButton.classList.add('visible');
-
-    // Affiche directement le contenu avec un léger délai pour la transition
-    setTimeout(() => {
-        zoomContent.classList.add('visible');
-    }, 200);
-
-    document.body.style.overflow = 'hidden';
-}
 
     function unzoomCard() {
         if (!activeCard) return;
@@ -110,10 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-//===================================================================================================================================================================
-
-
 
 let header = document.querySelector("nav");
 let menu = document.querySelectorAll("a");
