@@ -7,6 +7,8 @@ import (
 	"text/template"
 )
 
+// Stucture qu'on fait passer a la page web, elle contiens les codes sources des epreuves
+
 type PassedStruct struct {
 	Code1 string
 	Code2 string
@@ -16,10 +18,7 @@ type PassedStruct struct {
 	Code6 string
 }
 
-type FlipRequest struct {
-	CardID string `json:"cardId"`
-}
-
+// Fonction pour lire les fichiers des epreuves
 func ReadEpreuve(epreuve string) string {
 	fileContent, err := ioutil.ReadFile("../assets/Epreuves/" + epreuve)
 	if err != nil {
@@ -44,6 +43,7 @@ func main() {
 		return
 	}
 
+	// On lit les fichiers des epreuves
 	CodeEp1 = ReadEpreuve("Epreuve1.css")
 	CodeEp2 = ReadEpreuve("Epreuve2.go")
 	CodeEp3 = ReadEpreuve("Epreuve3.go")
@@ -62,11 +62,8 @@ func main() {
 
 	// Bouton pour aller a /promo
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		// ON envoie les fichiers des epreuves a la page web
 		temp.ExecuteTemplate(w, "index", PassedVars)
-	})
-
-	http.HandleFunc("/flipcard", func(w http.ResponseWriter, r *http.Request) {
-
 	})
 
 	// Fichiers statiques

@@ -1,10 +1,14 @@
+// au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
+    // Recuperation des objets du HTML
     const cards = document.querySelectorAll('.card');
     const audio = document.getElementById('son');
     const overlay = document.querySelector('.overlay');
     const closeButton = document.querySelector('.close-button');
+
     let activeCard = null;
 
+    // Toggle la classe clicked sur la carte envoyée
     function retournerCarte(idCarte) {
         const carte = document.getElementById(idCarte);
         if (carte) {
@@ -12,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Retourne les cartes basées sur l'id de la carte cliquée
     function GetFlipCard(currentCardID) {
         switch (currentCardID) {
             case "1":
@@ -42,15 +47,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-
     cards.forEach(card => {
+        // Quand une carte est cliquée 
         card.addEventListener('click', (event) => {
             const clickedCard = event.currentTarget;
+
+            // Joue le son et retourne la carte
             if (audio) {
                 audio.currentTime = 0;
                 audio.play();
             }
+            // Retourne la carte
             GetFlipCard(clickedCard.id);
+            // Vérifie si toutes les cartes sont retournées
             checkAllCardsClicked();
         });
     });

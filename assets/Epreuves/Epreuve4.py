@@ -15,6 +15,6 @@ for x in mots:
 		plusLongLength = len(x)
 		plusLongMot = x
 
-print("Le mot fait:", len(mots, "mots")
+print("Le mot fait:", len(mots), "mots")
 print("Le texte fait", len(texte), "caractères")
 print("Le mot le plus long est", plusLongMot)
