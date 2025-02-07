@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'hidden';
     }
 
+    //Gestion de la fermeture du zoom
     function unzoomCard() {
         if (!activeCard) return;
         console.log("Unzoom de la carte", activeCard);
@@ -105,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
     }
 
+    //Gestion de la fermeture des carte d'epreuves
     closeButton.addEventListener('click', unzoomCard);
     overlay.addEventListener('click', unzoomCard);
     document.addEventListener('keydown', function(e) {
@@ -114,6 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+//Animation navabar lors du scroll
 let header = document.querySelector("nav");
 let menu = document.querySelectorAll("a");
 
