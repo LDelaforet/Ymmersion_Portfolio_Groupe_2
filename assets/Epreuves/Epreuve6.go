@@ -11,7 +11,7 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	fmt.Println("Vérification de mot de passe :")
-	fmt.Println("Entrez un mdp de 8 caractères ou plus (spériaux inclus):")
+	fmt.Println("Entrez un mdp de 8 caractères ou plus (spéciaux inclus):")
 	fmt.Println("Entrez exit pour quitter le logiciel")
 
 	for {
